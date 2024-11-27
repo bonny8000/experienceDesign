@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSP831 Experience Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-color: #f9f9fc;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #0078d7, #005bb5);
+            color: #fff;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #005bb5;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+        .button:hover {
+            background: #005bb5;
+        }
+        .details {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: #eef7ff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .details.visible {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #333;
+            color: #fff;
+        }
+        ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.classList.toggle('visible');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>DSP831 Experience Design</h1>
+</header>
+
+<nav>
+    <a href="#overview">Overview</a>
+    <a href="#stages">Coursework Stages</a>
+    <a href="#submission">Submission Requirements</a>
+    <a href="#assessment">Assessment Criteria</a>
+    <a href="#resources">Resources</a>
+</nav>
+
+<div class="container">
+
+    <section id="overview" class="section">
+        <h2>Overview</h2>
+        <p><strong>Project Goals:</strong> Reduce domestic energy consumption using smart meter data and engage users positively with climate action.</p>
+        <p><strong>Background:</strong> This project leverages smart meter data and AI insights to reduce confusion and promote actionable energy-saving habits. Supported by Gengame Ltd., the project tackles key challenges in user engagement and behavior change.</p>
+        <button class="button" onclick="toggleDetails('details-overview')">More Details</button>
+        <div id="details-overview" class="details">
+            <p>Smart meters provide real-time energy usage data, enabling households to:
+            </p>
+            <ul>
+                <li>Adopt energy-efficient behaviors.</li>
+                <li>Invest in home efficiency improvements.</li>
+                <li>Shift energy usage to reduce peak demand.</li>
+                <li>Engage with renewable energy options.</li>
+            </ul>
+            <p>The UK government’s goal is to have all households offered smart meters by 2025, making this a critical time to drive meaningful climate-positive action.</p>
+        </div>
+    </section>
+
+    <section id="stages" class="section">
+        <h2>Coursework Stages</h2>
+        <p>The project is divided into three distinct stages to structure the design process effectively.</p>
+        <ul>
+            <li><strong>Discovery:</strong> Define the problem space, explore user goals, and create a UX Vision Statement.</li>
+            <li><strong>Design:</strong> Ideate app features, storyboard user flows, and build low-fidelity prototypes.</li>
+            <li><strong>Delivery:</strong> Develop mid-fidelity Figma prototypes showcasing user-centered solutions.</li>
+        </ul>
+        <button class="button" onclick="toggleDetails('details-stages')">Explore Stages</button>
+        <div id="details-stages" class="details">
+            <h3>Stage 1: Discovery</h3>
+            <ul>
+                <li>Analyze how smart meter data can reduce energy consumption.</li>
+                <li>Identify key obstacles and user pain points.</li>
+                <li>Deliverables: UX Vision Statement, Design Principles.</li>
+            </ul>
+            <h3>Stage 2: Design</h3>
+            <ul>
+                <li>Brainstorm app features and map user needs to functionality.</li>
+                <li>Create low-fidelity prototypes for key user flows.</li>
+            </ul>
+            <h3>Stage 3: Delivery</h3>
+            <ul>
+                <li>Present a mid-fidelity prototype developed in Figma.</li>
+                <li>Ensure usability and compliance with accessibility standards.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="submission" class="section">
+        <h2>Submission Requirements</h2>
+        <p>Prepare a detailed A3 landscape report that clearly communicates your design process and outcomes.</p>
+        <button class="button" onclick="toggleDetails('details-submission')">View Submission Details</button>
+        <div id="details-submission" class="details">
+            <ul>
+                <li>Title page with clickable Figma prototype link.</li>
+                <li>Discovery insights and key user needs.</li>
+                <li>Wireframes and sketches showcasing user flows.</li>
+                <li>Evaluation and reflection on prototyping outcomes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="assessment" class="section">
+        <h2>Assessment Criteria</h2>
+        <p>Your work will be evaluated based on the following criteria:</p>
+        <button class="button" onclick="toggleDetails('details-assessment')">Learn More</button>
+        <div id="details-assessment" class="details">
+            <ul>
+                <li><strong>Knowledge:</strong> Demonstrates understanding of UX design principles.</li>
+                <li><strong>Application:</strong> Effectively utilizes research and prototyping techniques.</li>
+                <li><strong>Design Outcome:</strong> Offers a novel and user-friendly solution.</li>
+                <li><strong>Communication:</strong> Clear and professional presentation of ideas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resources" class="section">
+        <h2>Resources</h2>
+        <p>Utilize the provided materials to support your research and design:</p>
+        <button class="button" onclick="toggleDetails('details-resources')">Access Resources</button>
+        <div id="details-resources" class="details">
+            <ul>
+                <li>Research pack with ethnographic videos and family personas.</li>
+                <li>Example user journeys and speculative concepts.</
+                    <div id="details-resources" class="details">
+                        <ul>
+                            <li>Research pack with ethnographic videos and family personas.</li>
+                            <li>Example user journeys and speculative concepts.</li>
+                            <li>Data on energy consumption trends in UK households.</li>
+                            <li>Guidance on creating UX vision statements and design principles.</li>
+                            <li>Templates for wireframes, site maps, and user flows.</li>
+                        </ul>
+                        <p>These resources are accessible via the module's online platform and provide a comprehensive foundation for your project.</p>
+                    </div>
+                    
+                    <section id="evaluation" class="section">
+                        <h2>Evaluation Process</h2>
+                        <p>Prototype evaluation is a critical step to refine your design. Use these methods:</p>
+                        <ul>
+                            <li><strong>User Testing:</strong> Gather feedback from target users using low-fidelity prototypes.</li>
+                            <li><strong>Scenario Walkthroughs:</strong> Simulate user interactions to identify usability issues.</li>
+                            <li><strong>Iterative Refinement:</strong> Incorporate feedback to improve design effectiveness.</li>
+                        </ul>
+                        <button class="button" onclick="toggleDetails('details-evaluation')">View Evaluation Details</button>
+                        <div id="details-evaluation" class="details">
+                            <p><strong>Key Steps:</strong></p>
+                            <ul>
+                                <li>Plan evaluation sessions using the Question Plan Test Reflect framework.</li>
+                                <li>Document user feedback with photos or notes.</li>
+                                <li>Analyze findings to identify patterns and actionable insights.</li>
+                                <li>Sketch alternative designs for unresolved issues and test them iteratively.</li>
+                            </ul>
+                            <p>Ensure all participants provide informed consent before evaluation begins.</p>
+                        </div>
+                    </section>
+                    
+                    <footer>
+                        <p>&copy; 2024 DSP831 Experience Design</p>
+                    </footer>
